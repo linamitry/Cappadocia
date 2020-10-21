@@ -59,8 +59,8 @@ function watch() {
    browserSync.init({
       server: {
           baseDir: "./"
-      }
-  });
+      },
+      port: process.env.PORT || 5000  });
 
   gulp.watch('./src/sass/**/*.sass', styles)
   gulp.watch('./src/js/**/*.js', scripts)
