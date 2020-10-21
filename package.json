@@ -22,7 +22,7 @@
     "node-sass": "^4.14.1"
   },
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "start": "gulp dev"
   },
   "keywords": [],
   "author": "",
