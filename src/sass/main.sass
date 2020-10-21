@@ -1,0 +1,291 @@
+@import 'vars'
+@import 'fonts'
+@import 'global'
+
+h1,
+h3,
+h4,
+p
+    font-weight: inherit
+    margin: 0
+
+.container
+    max-width: 1230px
+    margin: 0 auto
+    padding: 0 15px
+    &__fairy-tail,
+    &__our-trip
+        max-width: 1230px
+        padding: 0 15px
+        margin: 0 auto
+        position: absolute
+        top: 0
+        left: 0
+        right: 0
+        bottom: 0
+.page-section
+    margin: 200px auto
+    max-width: 1920px
+
+.header
+    background-image: url('../../images/header-bg.jpg')
+    height: 100vh
+    background-repeat: no-repeat
+    background-size: cover
+    background-position: bottom center
+    &__top
+        display: flex
+        justify-content: space-between
+        padding-top: 72px
+        @extend %roboto-regular
+        font-size: 24px
+        line-height: 28px
+    &__title
+        text-align: center
+        font-family: 'balqis'
+        font-size: 250px
+        line-height: 334px
+        position: relative
+        padding-top: 152px
+    &__title span
+        font-size: 56px
+        line-height: 66px
+        @extend %roboto-light-italic
+        position: absolute
+        right: 91px
+        bottom: 0px
+    &__phone
+        position: relative
+        &::before
+            content: url("../../images/phone.svg")
+            position: absolute
+            background-size: cover
+            width: 30px
+            height: 30px
+            left: -40px
+.menu
+    &__list
+        // 
+    &__list-item
+        display: inline-block
+        &+&
+            margin-left: 52px
+    &__list-link
+        &:hover
+            text-decoration: underline
+
+.title
+    margin-bottom: 100px
+    font-family: 'balqis'
+    font-size: 96px
+    line-height: 128px
+    color: #E2AB3F
+    text-align: left
+    position: relative
+    & span
+        @extend %roboto-light-italic
+        font-size: 24px
+        line-height: 28px
+        position: absolute
+        color: #000
+        bottom: 0
+    &__fairy-tail span
+        left: 185px
+    &__our-trip span
+        left: 243px
+    &__hotel span
+        left: 120px
+    &__price span
+        left: 121px
+    &__contact-data span
+        left: 298px
+    &__contact-amount span
+        left: 354px
+    &__contact-data
+        margin-bottom: 20px
+
+.fairy-tail
+    &__inner
+        position: relative
+    &__body
+        width: 50%
+        margin-left: auto
+        padding-left: 55px
+        display: flex
+        flex-direction: column
+        justify-content: space-around
+        height: 100%
+    &__slider
+        width: 50%
+    &__text
+        padding: 10px 0
+    &__text span
+        @extend %roboto-regular
+
+
+.slick-btn
+    z-index: 5
+    position: absolute
+    cursor: pointer
+    top: 50%
+    transform: translateY(-50%)
+    border: none
+    background: transparent
+    &__back
+        right: 0
+
+.our-trip
+    &__inner
+        position: relative
+    &__body
+        margin-right: auto
+        padding-right: 55px
+        display: flex
+        flex-direction: column
+        justify-content: space-around
+        height: 100%
+        font-size: 24px
+        line-height: 28px
+        align-items: start
+    &__content
+        width: 50%
+    &__slider
+        width: 50%
+        margin-left: auto
+    &__text
+        @extend %roboto-light
+        margin: 5px 0
+    &__text li:first-child
+        @extend %roboto-regular
+        margin-bottom: 20px
+    &__btn
+        @extend %roboto-light
+        background: #fff
+        border: 1px solid #E2AB3F
+        padding: 11px 54px
+        margin-top: 50px
+
+.hotel
+    &__inner
+        display: flex
+    &__images
+        margin-right: 100px
+    &__content
+        max-width: 600px
+    &__text
+        margin-bottom: 20px
+    &__gallery
+        margin-top: 30px
+        display: flex
+        flex-wrap: wrap
+        justify-content: space-between
+    &__gallery a
+        margin-top: 50px
+
+.price
+    background-image: url(../../images/price-bg.png)
+    background-repeat: no-repeat
+    background-position: center right 20%
+    &__inner
+        display: flex
+    &__off-title,
+    &__on-title
+        @extend %roboto-regular
+        font-size: 24px
+        line-height: 28px
+        margin-bottom: 50px
+    &__on
+        margin-right: 70px
+        max-width: 530px
+    &__list-item
+        margin-bottom: 20px
+
+.contact
+    &__inner
+        display: flex
+        justify-content: space-between
+        align-items: center
+    &__content
+        display: flex
+        flex-direction: column
+    &__form
+        text-align: center
+    &__form-title
+        @extend %roboto-regular
+        font-size: 24px
+        line-height: 28px
+        margin-bottom: 50px
+    &__form_name,
+    &__form_tel
+        width: 383px
+        height: 50px
+        border: 1px solid #E2AB3F
+        margin-bottom: 20px
+        padding-left: 31px
+    &__form-btn
+        @extend %roboto-light
+        padding: 11px 45px
+        background: #fff
+        font-size: 24px
+        line-height: 28px
+        border: 1px solid #E2AB3F
+.title__contact-data,
+.title__contact-amount
+    text-align: center
+
+.footer
+    background-image: url('../../images/footer-bg.jpg')
+    height: 100%
+    background-repeat: no-repeat
+    background-size: cover
+    background-position: bottom center
+    &__inner
+        display: flex
+        justify-content: space-around
+    &__balloon
+        background-image: url('../../images/footer-bg2.svg')
+        height: 100vh
+        width: 100vh
+        background-repeat: no-repeat
+        text-align: center
+        max-width: 356px
+        margin-top: 96px
+    &__balloon-title
+        font-size: 86px
+        line-height: 115px
+        font-family: 'balqis'
+        color: #E2AB3F
+        margin-bottom: 20px
+        margin-top: 71px
+    &__balloon-item
+        margin-bottom: 20px
+    &__balloon__phone
+        position: relative
+        &::before
+            content: url("../../images/phone-2.svg")
+            position: absolute
+            left: -40px
+            top: 50%
+            transform: translateY(-50%)
+            cursor: pointer
+    &__balloon__mail
+        position: relative
+        &::before
+            content: url("../../images/mail.svg")
+            position: absolute
+            left: -40px
+            transform: translateY(-10%)
+            cursor: pointer
+    &__balloon-social-list
+        margin-top: 38px
+    &__balloon-social-item
+        display: inline-block
+    &__balloon-social-item + &__balloon-social-item
+        padding-left: 15px
+    &__title
+        font-size: 86px
+        line-height: 115px
+        font-family: 'balqis'
+        margin-top: 311px
+
+@import 'media'
