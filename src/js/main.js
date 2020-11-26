@@ -15,21 +15,4 @@ $(function(){
           
           ]
     });
-
-    // $('.our-trip__slider').slick({
-    //     prevArrow:"<img class='our-trip__slider-btn our-trip__slider-btn__back' src='../../images/arrow-back.svg'>",
-    //     nextArrow:"<img class='our-trip__slider-btn our-trip__slider-btn__next' src='../../images/arrow-next.svg'>",
-    //     infinite: true,
-    //     fade: true,
-    //     responsive: [
-    //         {
-    //           breakpoint: 601,
-    //           settings: {
-    //               arrows: false
-    //           }
-    //         },
-          
-    //       ]
-    // });
-
 });
