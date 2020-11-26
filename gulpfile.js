@@ -1,4 +1,3 @@
-//Подключаем модули галпа
 const gulp = require('gulp');
 const concat = require('gulp-concat');
 const autoprefixer = require('gulp-autoprefixer');
@@ -12,12 +11,10 @@ const sass = require('gulp-sass');
 const cssFiles = [
    './node_modules/normalize.css/normalize.css',
    './node_modules/slick-carousel/slick/slick.css',
-   //'./src/sass/jquery.fancybox.min.css',
    './node_modules/fullpage.js/dist/fullpage.css',
    './src/sass/main.sass'
 ]
 const jsFiles = [
-   // './src/js/lib.js',
    './node_modules/jquery/dist/jquery.min.js',
    './node_modules/slick-carousel/slick/slick.min.js',
    './src/js/jquery.fancybox.min.js',   
